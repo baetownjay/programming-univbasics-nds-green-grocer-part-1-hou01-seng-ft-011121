@@ -29,18 +29,8 @@ def consolidate_cart(cart)
   receipt = cart
   cart.each do |item_hash|
     i = 0
-    
-    
-    
-    
     while i < cart.length do
       if item_hash == receipt[i]
-        binding.pry
-        
-        
-        
-        
-        
         if receipt[i][:count]
           receipt[i][:count] += 1
           break
@@ -54,5 +44,3 @@ def consolidate_cart(cart)
   end
   receipt.uniq
 end
-
-  
