@@ -22,6 +22,12 @@ def consolidate_cart(cart)
     i = 0
     while i < cart.length do
       if item_hash == receipt[i]
+        
+        
+        
+        
+        
+        
         if receipt[i][:count]
           receipt[i][:count] += 1
           break
