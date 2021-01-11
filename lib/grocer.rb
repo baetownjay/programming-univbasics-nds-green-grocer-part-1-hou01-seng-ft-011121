@@ -27,7 +27,6 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   receipt = cart
-  binding.pry
   cart.each do |item_hash|
     i = 0
     
@@ -36,7 +35,7 @@ def consolidate_cart(cart)
     
     while i < cart.length do
       if item_hash == receipt[i]
-        
+        binding.pry
         
         
         
